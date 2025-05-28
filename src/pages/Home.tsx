@@ -1,0 +1,19 @@
+// トップページ（Home）のコンポーネント
+import Profile from "../components/Profile";
+import Qualifications from "../components/Qualifications";
+import Experiences from "../components/Experiences";
+import SelfPR from "../components/SelfPR";
+
+const Home = () => (
+    <div className="min-h-screen bg-gradient-to-br from-[#FFF5E1] via-[#FFD6A5] to-white py-10 px-2">
+        <div className="max-w-3xl mx-auto flex flex-col gap-10">
+        <Profile />
+        <Qualifications />
+        <Experiences />
+        <SelfPR />
+        <footer className="text-center text-xs text-gray-400 mt-8">© 2024 松尾直実</footer>
+        </div>
+    </div>
+);
+
+export default Home; 
