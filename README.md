@@ -37,9 +37,12 @@
 ## ディレクトリ構成（主なファイル）
 
 - `src/`：ソースコード（`App.tsx`がメインコンポーネント、`main.tsx`がエントリーポイント）
-- `public/`：公開用静的ファイル
+- `public/`：公開用静的ファイル（例：`danceCat.jpg`）
 - `vite.config.ts`：Viteの設定ファイル
 - `package.json`：依存パッケージやスクリプト管理
+- `index.html`：HTMLエントリーポイント
+- `eslint.config.js`：ESLint設定ファイル
+- `tsconfig.json`：TypeScript設定ファイル
 
 ### src/ 以下の詳細
 
@@ -55,7 +58,10 @@ src/
   │     ├── Home.tsx
   │     └── About.tsx
   ├── assets/
-  │     └── react.svg
+  │     ├── react.svg
+  │     ├── vite.svg
+  │     ├── tailwindcss.svg
+  │     └── typescript.svg
   ├── App.tsx
   ├── main.tsx
   ├── index.css
@@ -66,22 +72,14 @@ src/
 - `pages/`：ページ単位のコンポーネント
 - `assets/`：画像やSVGなどの静的リソース
 
-## ディレクトリ構成（リファクタリング後）
+---
 
-```
-src/
-  ├── components/         # UIコンポーネント
-  ├── pages/              # ページ単位
-  ├── constants/          # データ定数
-  ├── types/              # 型定義
-  ├── assets/             # 静的リソース
-  ├── App.tsx
-  ├── main.tsx
-  └── index.css
-```
+## アイコンについて
+
+本プロジェクトで使用している技術系アイコンは [TechIcons.dev](https://techicons.dev/) より引用しています。
 
 ## カスタマイズ方法
-- `src/constants/`配下のデータを書き換えることで、資格や経験の内容を簡単に変更できます。
+- 資格や経験の内容は各コンポーネント（例：`Qualifications.tsx`や`Experiences.tsx`）内のデータを書き換えることで変更できます。
 - デザインや色はTailwind CSSのクラス、または`tailwind.config.js`でカスタム可能です。
 
 ## リファクタリング方針
