@@ -19,6 +19,7 @@ const Profile = () => {
             <div className="w-28 h-28 bg-gradient-to-tr rounded-full flex items-center justify-center shadow-lg mb-2 border-4 border-white overflow-hidden" style={{ background: 'linear-gradient(135deg, #FF9900 0%, #FFB347 100%)' }}>
                 <img src="/danceCat.jpg" alt="アイコン" className="w-full h-full object-cover" />
             </div>
+            <div className="text-sm text-gray-400" style={{ letterSpacing: '0.1em' }}>まつお　なおみ</div>
             <h1 className="text-4xl md:text-5xl font-extrabold tracking-tight drop-shadow-sm" style={{ color: '#FF9900' }}>松尾 直実</h1>
             <p className="text-gray-500 text-lg">1998.1.3（{age}歳）</p>
             <div className="flex flex-col md:flex-row gap-2 mt-2 text-sm items-center" style={{ color: '#FF9900' }}>

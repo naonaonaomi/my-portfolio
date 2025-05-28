@@ -11,6 +11,7 @@ const experiences: Experience[] = [
   { name: "VBA", period: "独学", detail: "基本的なマクロ作成が可能" },
   { name: "VB.NET", period: "9か月", detail: "基本的なプログラミングが可能" },
   { name: "PHP(CakePHP)", period: "1年2か月", detail: "基本的なプログラミングが可能" },
+  { name: "React(Next.js)", period: "2か月", detail: "AIまかせなので、基本から学びなおし中です" },
 ];
 
 const Experiences = () => (
