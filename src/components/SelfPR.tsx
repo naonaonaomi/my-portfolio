@@ -7,16 +7,13 @@ const SelfPR = () => (
             <div className="relative rounded-xl p-6 shadow-sm border-l-4" style={{ background: '#FFF5E1CC', borderColor: '#FF9900' }}>
                 <div className="font-bold mb-1" style={{ color: '#FF9900' }}>＜分かりやすい資料作成＞</div>
                 <div className="text-gray-700 text-sm leading-relaxed">
-                    運用保守で運用手順書を作成する際に、誰が見ても操作を行える分かりやすい資料作成を心がけました。<br />
-                    お客様向けに作成した操作手順書が分かりやすいとのことから、同じシステムを使う他のお客様のところでも採用されることがありました。<br />
-                    また、メモ書きのような手順書を書き直したり、様々な方が更新をして情報や書き方がばらけている資料を見つけた際は、積極的に整理を行っています。
+                    運用手順書を誰でも理解できるように作成し、他のお客様にも採用されました。情報が整理されていない資料も積極的に整えています。
                 </div>
             </div>
             <div className="relative rounded-xl p-6 shadow-sm border-l-4" style={{ background: '#FFF5E1CC', borderColor: '#FF9900' }}>
                 <div className="font-bold mb-1" style={{ color: '#FF9900' }}>＜UIの改善＞</div>
                 <div className="text-gray-700 text-sm leading-relaxed">
-                    設計の裁量があった社内システム開発では、UIの改善に取り組みました。<br />
-                    自社システムはどれも似た見た目をしていますが、このシステムではHOME（メニュー画面）を作成したり、一覧の行クリックで詳細画面に遷移したりなど、以降のシステムでも引き継がれるUIを追加することができました。
+                    社内システム開発でUIを改善し、HOME画面や行クリックでの詳細遷移など、使いやすい機能を追加しました。
                 </div>
             </div>
         </div>

@@ -11,8 +11,9 @@
   - React（フロントエンドUIライブラリ）
   - Vite（高速なビルドツール／開発サーバー）
   - Tailwind CSS（ユーティリティファーストなCSSフレームワーク）
+  - React Router DOM（ルーティング）
 - **その他**:
-  - ESLint（コード品質チェック）
+  - ESLint（静的解析ツール）
   - 各種型定義パッケージ（@types/react など）
 
 ## 開発手順
@@ -33,11 +34,15 @@
    ```sh
    npm run lint
    ```
+5. プレビュー
+   ```sh
+   npm run preview
+   ```
 
 ## ディレクトリ構成（主なファイル）
 
 - `src/`：ソースコード（`App.tsx`がメインコンポーネント、`main.tsx`がエントリーポイント）
-- `public/`：公開用静的ファイル（例：`danceCat.jpg`）
+- `public/`：公開用静的ファイル（例：`danceCat.jpg`、`assets/`配下のSVG等）
 - `vite.config.ts`：Viteの設定ファイル
 - `package.json`：依存パッケージやスクリプト管理
 - `index.html`：HTMLエントリーポイント
@@ -57,11 +62,6 @@ src/
   ├── pages/
   │     ├── Home.tsx
   │     └── About.tsx
-  ├── assets/
-  │     ├── react.svg
-  │     ├── vite.svg
-  │     ├── tailwindcss.svg
-  │     └── typescript.svg
   ├── App.tsx
   ├── main.tsx
   ├── index.css
@@ -70,21 +70,23 @@ src/
 
 - `components/`：再利用可能なUIコンポーネント
 - `pages/`：ページ単位のコンポーネント
-- `assets/`：画像やSVGなどの静的リソース
+
+### public/ 以下
+
+```
+public/
+  ├── danceCat.jpg
+  └── assets/
+        ├── react.svg
+        ├── vite.svg
+        ├── tailwindcss.svg
+        ├── typescript.svg
+        ├── github.svg
+        └── vercel.svg
+```
 
 ---
 
 ## アイコンについて
 
-本プロジェクトで使用している技術系アイコンは [TechIcons.dev](https://techicons.dev/) より引用しています。
-
-## カスタマイズ方法
-- 資格や経験の内容は各コンポーネント（例：`Qualifications.tsx`や`Experiences.tsx`）内のデータを書き換えることで変更できます。
-- デザインや色はTailwind CSSのクラス、または`tailwind.config.js`でカスタム可能です。
-
-## リファクタリング方針
-- 型定義・データ・UIロジックの分離
-- 冗長なインラインstyleの排除
-- propsによるデータ受け渡しで再利用性向上
-- ESLint/型チェックの徹底
-- アクセシビリティ・セキュリティ考慮
+本プロジェクトで使用している技術系アイコンは [TechIcons.dev](https://techicons.dev/) より引用し、`public/assets/`配下に配置しています。
