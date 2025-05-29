@@ -2,7 +2,7 @@
 
 :root {
     /* メインカラー */
-    --color-main: #0074D9;
+    --color-main: #57b3e4;
     --color-text: #334155;
     --color-main-light: #4FC3F7;
     --color-main-light-alpha: #4FC3F755;
@@ -26,7 +26,7 @@
 
 body.light :root,
 body.light {
-  --color-main: #0074D9;
+  --color-main: #57b3e4;
   --color-text: #334155;
   --color-main-light: #4FC3F7;
   --color-main-light-alpha: #4FC3F755;
