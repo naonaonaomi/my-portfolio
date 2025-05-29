@@ -15,7 +15,7 @@ const Profile = () => {
     const birthDate = new Date(1998, 0, 3); // 月は0始まり（1月=0）
     const age = getAge(birthDate);
     return (
-        <section className="bg-white/90 rounded-3xl shadow-[0_4px_24px_var(--color-shadow-profile)] p-10 flex flex-col items-center gap-4 border" style={{ borderColor: 'var(--color-main-alpha)' }}>
+        <section className="rounded-3xl shadow-[0_4px_24px_var(--color-shadow-profile)] p-10 flex flex-col items-center gap-4 border" style={{ backgroundColor: 'var(--color-main-section)', borderColor: 'var(--color-main-alpha)' }}>
             <div className="w-28 h-28 bg-gradient-to-tr rounded-full flex items-center justify-center shadow-lg mb-2 border-4 border-white overflow-hidden" style={{ background: 'linear-gradient(135deg, var(--color-main) 0%, var(--color-main-light) 100%)' }}>
                 <img src="/danceCat.jpg" alt="アイコン" className="w-full h-full object-cover" />
             </div>

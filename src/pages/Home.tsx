@@ -5,7 +5,7 @@ import Experiences from "../components/Experiences";
 import SelfPR from "../components/SelfPR";
 
 const Home = () => (
-    <div>
+    <div style={{ position: "relative", zIndex: 2 }}>
         <div className="max-w-3xl mx-auto flex flex-col gap-10">
             <Profile />
             <Qualifications />

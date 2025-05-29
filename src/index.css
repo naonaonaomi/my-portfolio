@@ -3,17 +3,19 @@
 :root {
     /* メインカラー */
     --color-main: #0074D9;
+    --color-text: #334155;
     --color-main-light: #4FC3F7;
     --color-main-light-alpha: #4FC3F755;
     --color-main-alpha: #0074D933;
     --color-bg-light: #fdf5e3;
     --color-bg-lighter: #B3E5FC;
-    --color-bg-box: #E1F5FE;
-    --color-bg-hover: #BBDEFB;
+    --color-bg-box: #eefaff;
+    --color-bg-hover: #ddfdff;
     --color-bg-box-alpha: #E3F2FDCC;
     --color-shadow: rgba(0,116,217,0.12);
     --color-shadow-header: rgba(0,116,217,0.10);
     --color-shadow-profile: rgba(79,195,247,0.18);
+    --color-main-section: rgba(255,255,255,0.9);
 
     --color-black: #222222;
     --color-react: #00D8FF;
@@ -25,17 +27,19 @@
 body.light :root,
 body.light {
   --color-main: #0074D9;
+  --color-text: #334155;
   --color-main-light: #4FC3F7;
   --color-main-light-alpha: #4FC3F755;
   --color-main-alpha: #0074D933;
   --color-bg-light: #fdf5e3;
   --color-bg-lighter: #B3E5FC;
-  --color-bg-box: #E1F5FE;
-  --color-bg-hover: #BBDEFB;
+  --color-bg-box: #eefaff;
+  --color-bg-hover: #ddfdff;
   --color-bg-box-alpha: #E3F2FDCC;
   --color-shadow: rgba(0,116,217,0.12);
   --color-shadow-header: rgba(0,116,217,0.10);
   --color-shadow-profile: rgba(79,195,247,0.18);
+  --color-main-section: rgba(255,255,255,0.9);
 
   --color-black: #222222;
   --color-react: #00D8FF;
@@ -47,8 +51,9 @@ body.light {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-main: #1E293B;
-    --color-main-light: #334155;
+    --color-main: #7c89b5;
+    --color-text: #CBD5E1;
+    --color-main-light: #516296;
     --color-main-light-alpha: #33415588;
     --color-main-alpha: #1E293B55;
     --color-bg-light: #0F172A;
@@ -59,6 +64,7 @@ body.light {
     --color-shadow: rgba(30,41,59,0.24);
     --color-shadow-header: rgba(30,41,59,0.18);
     --color-shadow-profile: rgba(51,65,85,0.28);
+    --color-main-section: rgba(15, 23, 37, 0.9);
 
     --color-black: #F3F4F6;
     --color-react: #00D8FF;
@@ -70,8 +76,9 @@ body.light {
 
 body.dark :root,
 body.dark {
-  --color-main: #1E293B;
-  --color-main-light: #334155;
+  --color-main: #7C8DB5;
+  --color-text: #CBD5E1;
+  --color-main-light: #516296;
   --color-main-light-alpha: #33415588;
   --color-main-alpha: #1E293B55;
   --color-bg-light: #0F172A;
@@ -82,6 +89,7 @@ body.dark {
   --color-shadow: rgba(30,41,59,0.24);
   --color-shadow-header: rgba(30,41,59,0.18);
   --color-shadow-profile: rgba(51,65,85,0.28);
+    --color-main-section: rgba(15, 23, 37, 0.9);
 
   --color-black: #F3F4F6;
   --color-react: #00D8FF;

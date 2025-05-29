@@ -14,13 +14,13 @@ const qualifications: Qualification[] = [
 ];
 
 const Qualifications = () => (
-    <section className="bg-white rounded-2xl shadow-[0_2px_8px_var(--color-shadow)] p-7 border" style={{ borderColor: 'var(--color-main-light-alpha)' }}>
+    <section className="bg-main-section  rounded-2xl shadow-[0_2px_8px_var(--color-shadow)] p-7 border" style={{ backgroundColor: 'var(--color-main-section)', borderColor: 'var(--color-main-light-alpha)' }}>
         <h2 className="text-xl font-bold mb-4 border-b pb-2" style={{ color: 'var(--color-main)', borderColor: 'var(--color-main-light)' }}>保有資格</h2>
         <ul className="space-y-2">
         {qualifications.map((q, i) => (
             <li key={i} className="flex items-center gap-4">
             <span className="text-xs text-gray-400 w-20">{q.year}</span>
-            <span className="text-base text-gray-700">{q.name}</span>
+            <span className="text-base" style={{ color: 'var(--color-text)' }}>{q.name}</span>
             </li>
         ))}
         </ul>

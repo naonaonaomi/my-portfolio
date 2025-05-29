@@ -7,14 +7,17 @@ import StarBackground from "./components/StarBackground";
 function App() {
     return (
         <Router>
-        <Header />
-        <StarBackground />
-        <main className="pt-24 min-h-screen bg-gradient-to-br from-[var(--color-bg-light)] via-[var(--color-bg-lighter)] to-white py-10 px-2">
-            <Routes>
-            <Route path="/" element={<Home />} />
-            <Route path="/about" element={<About />} />
-            </Routes>
-        </main>
+            <Header />
+            <main
+                className="pt-24 min-h-screen bg-gradient-to-br from-[var(--color-bg-light)] via-[var(--color-bg-lighter)] to-white py-10 px-2"
+                style={{ position: "relative" }}
+            >
+                <StarBackground />
+                <Routes>
+                    <Route path="/" element={<Home />} />
+                    <Route path="/about" element={<About />} />
+                </Routes>
+            </main>
         </Router>
     );
 }

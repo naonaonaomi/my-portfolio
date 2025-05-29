@@ -28,7 +28,7 @@ const StarBackground: React.FC = () => {
             position: "fixed",
             inset: 0,
             pointerEvents: "none",
-            zIndex: 0,
+            zIndex: 1,
         }}
         >
         {Array.from({ length: STAR_COUNT }).map((_, i) => {
