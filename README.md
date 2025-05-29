@@ -8,12 +8,14 @@
 
 - **言語**: TypeScript
 - **フレームワーク／ライブラリ**:
-  - React（フロントエンドUIライブラリ）
-  - Vite（高速なビルドツール／開発サーバー）
-  - Tailwind CSS（ユーティリティファーストなCSSフレームワーク）
-  - React Router DOM（ルーティング）
+  - React（フロントエンドUIライブラリ）v19.1.0
+  - React DOM v19.1.0
+  - React Router DOM（ルーティング）v7.6.1
+  - Vite（高速なビルドツール／開発サーバー）v6.3.5
+  - Tailwind CSS（ユーティリティファーストなCSSフレームワーク）v4.1.7
+  - @tailwindcss/vite（Tailwind CSS用Viteプラグイン）v4.1.7
 - **その他**:
-  - ESLint（静的解析ツール）
+  - ESLint（静的解析ツール）v9.25.0
   - 各種型定義パッケージ（@types/react など）
 
 ## 開発手順
@@ -29,6 +31,7 @@
 3. ビルド
    ```sh
    npm run build
+   # ※ TypeScriptのビルド(tsc -b)も含まれます
    ```
 4. Lintチェック
    ```sh
@@ -39,51 +42,48 @@
    npm run preview
    ```
 
-## ディレクトリ構成（主なファイル）
+## ディレクトリ構成（主なファイル・フォルダ）
+
+```
+project-root/
+  ├── src/
+  │     ├── components/
+  │     │     ├── Header.tsx
+  │     │     ├── Profile.tsx
+  │     │     ├── Qualifications.tsx
+  │     │     ├── Experiences.tsx
+  │     │     ├── SelfPR.tsx
+  │     │     └── StarBackground.tsx
+  │     ├── pages/
+  │     │     ├── Home.tsx
+  │     │     └── About.tsx
+  │     ├── App.tsx
+  │     ├── main.tsx
+  │     ├── index.css
+  │     └── vite-env.d.ts
+  ├── public/
+  │     ├── danceCat.jpg
+  │     └── assets/
+  │           ├── react.svg
+  │           ├── vite.svg
+  │           ├── tailwindcss.svg
+  │           ├── typescript.svg
+  │           ├── github.svg
+  │           ├── github_white.svg
+  │           ├── vercel.svg
+  │           └── vercel _white.svg
+  ├── vite.config.ts
+  ├── package.json
+  ├── index.html
+  ├── eslint.config.js
+  └── tsconfig.json
+```
 
 - `src/`：ソースコード（`App.tsx`がメインコンポーネント、`main.tsx`がエントリーポイント）
-- `public/`：公開用静的ファイル（例：`danceCat.jpg`、`assets/`配下のSVG等）
-- `vite.config.ts`：Viteの設定ファイル
-- `package.json`：依存パッケージやスクリプト管理
-- `index.html`：HTMLエントリーポイント
-- `eslint.config.js`：ESLint設定ファイル
-- `tsconfig.json`：TypeScript設定ファイル
-
-### src/ 以下の詳細
-
-```
-src/
-  ├── components/
-  │     ├── Header.tsx
-  │     ├── Profile.tsx
-  │     ├── Qualifications.tsx
-  │     ├── Experiences.tsx
-  │     └── SelfPR.tsx
-  ├── pages/
-  │     ├── Home.tsx
-  │     └── About.tsx
-  ├── App.tsx
-  ├── main.tsx
-  ├── index.css
-  └── vite-env.d.ts
-```
-
-- `components/`：再利用可能なUIコンポーネント
-- `pages/`：ページ単位のコンポーネント
-
-### public/ 以下
-
-```
-public/
-  ├── danceCat.jpg
-  └── assets/
-        ├── react.svg
-        ├── vite.svg
-        ├── tailwindcss.svg
-        ├── typescript.svg
-        ├── github.svg
-        └── vercel.svg
-```
+  - `components/`：再利用可能なUIコンポーネント
+  - `pages/`：ページ単位のコンポーネント
+- `public/`：公開用静的ファイル（画像やSVGアイコンなど）
+- その他設定ファイル：Vite、ESLint、TypeScriptなどの設定
 
 ---
 
