@@ -61,17 +61,8 @@ project-root/
   │     ├── main.tsx
   │     ├── index.css
   │     └── vite-env.d.ts
-  ├── public/
-  │     ├── danceCat.jpg
-  │     └── assets/
-  │           ├── react.svg
-  │           ├── vite.svg
-  │           ├── tailwindcss.svg
-  │           ├── typescript.svg
-  │           ├── github.svg
-  │           ├── github_white.svg
-  │           ├── vercel.svg
-  │           └── vercel _white.svg
+  ├── public
+  │   └── ...
   ├── vite.config.ts
   ├── package.json
   ├── index.html
