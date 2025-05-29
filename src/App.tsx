@@ -7,7 +7,7 @@ function App() {
     return (
         <Router>
         <Header />
-        <main className="pt-24 min-h-screen bg-gradient-to-br from-[#FFF5E1] via-[#FFD6A5] to-white py-10 px-2">
+        <main className="pt-24 min-h-screen bg-gradient-to-br from-[var(--color-bg-light)] via-[var(--color-bg-lighter)] to-white py-10 px-2">
             <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<About />} />

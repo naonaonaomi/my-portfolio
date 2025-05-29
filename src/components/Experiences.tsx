@@ -15,12 +15,12 @@ const experiences: Experience[] = [
 ];
 
 const Experiences = () => (
-  <section className="bg-white rounded-2xl shadow-[0_2px_8px_rgba(255,153,0,0.12)] p-7 border" style={{ borderColor: '#FFB34755' }}>
-    <h2 className="text-xl font-bold mb-4 border-b pb-2" style={{ color: '#FF9900', borderColor: '#FFB347' }}>経験</h2>
+  <section className="bg-white rounded-2xl shadow-[0_2px_8px_var(--color-shadow)] p-7 border" style={{ borderColor: 'var(--color-main-light-alpha)' }}>
+    <h2 className="text-xl font-bold mb-4 border-b pb-2" style={{ color: 'var(--color-main)', borderColor: 'var(--color-main-light)' }}>経験</h2>
     <ul className="space-y-3">
       {experiences.map((exp, i) => (
         <li key={i} className="flex flex-col md:flex-row md:items-center gap-2 md:gap-6 text-gray-700">
-          <span className="font-bold w-28" style={{ color: '#FF9900' }}>{exp.name}</span>
+          <span className="font-bold w-28" style={{ color: 'var(--color-main)' }}>{exp.name}</span>
           <span className="text-xs text-gray-400 w-20">{exp.period}</span>
           <span className="text-base">{exp.detail}</span>
         </li>

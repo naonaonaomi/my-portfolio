@@ -1,1 +1,23 @@
 @import "tailwindcss";
+
+:root {
+    /* メインカラー */
+    --color-main: #FF9900;
+    --color-main-light: #FFB347;
+    --color-main-light-alpha: #FFB34755;
+    --color-main-alpha: #FF990033;
+    --color-bg-light: #FFF5E1;
+    --color-bg-lighter: #FFD6A5;
+    --color-bg-box: #FDF6ED;
+    --color-bg-hover: #FFECD1;
+    --color-bg-box-alpha: #FFF5E1CC;
+    --color-shadow: rgba(255,153,0,0.12);
+    --color-shadow-header: rgba(255,153,0,0.10);
+    --color-shadow-profile: rgba(255,179,71,0.18);
+
+    --color-black: #222222;
+    --color-react: #00D8FF;
+    --color-ts: #3178C6;
+    --color-vite: #646CFF;
+    --color-tailwind: #38BDF8;
+} 
