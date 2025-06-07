@@ -6,12 +6,20 @@ type Experience = {
   detail: string; // 詳細
 };
 
-// 経験リスト
+// React(Next.js)の期間を自動設定
+const getReactPeriod = () => {
+  const start = new Date(2025, 3);
+  const now = new Date();
+  let m = (now.getFullYear() - start.getFullYear()) * 12 + (now.getMonth() - start.getMonth());
+  m = Math.max(m, 0);
+  return m >= 12 ? `${Math.floor(m/12)}年${m%12 ? m%12 + 'か月' : ''}` : `${m}か月`;
+};
+
 const experiences: Experience[] = [
   { name: "VBA", period: "独学", detail: "基本的なマクロ作成が可能" },
   { name: "VB.NET", period: "9か月", detail: "基本的なプログラミングが可能" },
   { name: "PHP(CakePHP)", period: "1年2か月", detail: "基本的なプログラミングが可能" },
-  { name: "React(Next.js)", period: "2か月", detail: "AIまかせなので、基本から学びなおし中です" },
+  { name: "React(Next.js)", period: getReactPeriod(), detail: "基本から学びなおし中" },
 ];
 
 const Experiences = () => (
