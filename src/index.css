@@ -3,16 +3,20 @@
 :root {
     --color-main: #57b3e4;                  /* メインカラー */
     --color-text: #334155;                  /* テキストカラー */
+
+    --color-bg-box-alpha: #E3F2FDCC;        /* 自己PR２つのカードの背景色 */
+
     --color-main-light: #4FC3F7;            /* カードヘッダーの下線 */
     --color-main-light-alpha: #4FC3F755;    /* カードや使用技術ボタンの枠線 */
-    --color-bg-light: #fdf5e3;              /* 背景色２ */
-    --color-bg-lighter: #B3E5FC;            /* 背景色１ */
     --color-bg-box: #eefaff;                /* 使用技術ボタン・太陽ボタンの背景 */
     --color-bg-hover: #ddfdff;              /* 太陽ボタンの背景・Gitボタンマウスオーバー色 */
-    --color-bg-box-alpha: #E3F2FDCC;        /* 自己PR２つのカードの背景色 */
-    --color-shadow: rgba(0,116,217,0.12);   /* カードのぼやっとした影 */
-    --color-shadow-header: rgba(0,116,217,0.10);   /* ヘッダーの下ののぼやっとした影（↑より若干薄い） */
+    
+    --color-shadow: rgba(0,116,217,0.12);          /* カードのぼやっとした影 */
+    --color-shadow-header: rgba(0,116,217,0.10);   /* ヘッダーの下のぼやっとした影（↑より若干薄い） */
     --color-main-section: rgba(255,255,255,0.9);   /* 全カードの背景色 */
+    
+    --color-bg-lighter: #B3E5FC;            /* 背景色１ */
+    --color-bg-light: #fdf5e3;              /* 背景色２ */
 
     --color-black: #222222;
     --color-react: #00D8FF;
@@ -23,18 +27,22 @@
 
 body.light :root,
 body.light {
-  --color-main: #57b3e4;
-  --color-text: #334155;
-  --color-main-light: #4FC3F7;
-  --color-main-light-alpha: #4FC3F755;
-  --color-bg-light: #fdf5e3;
-  --color-bg-lighter: #B3E5FC;
-  --color-bg-box: #eefaff;
-  --color-bg-hover: #ddfdff;
-  --color-bg-box-alpha: #E3F2FDCC;
-  --color-shadow: rgba(0,116,217,0.12);
-  --color-shadow-header: rgba(0,116,217,0.10);
-  --color-main-section: rgba(255,255,255,0.9);
+  --color-main: #57b3e4;                  /* メインカラー */
+  --color-text: #334155;                  /* テキストカラー */
+
+  --color-bg-box-alpha: #E3F2FDCC;        /* 自己PR２つのカードの背景色 */
+
+  --color-main-light: #4FC3F7;            /* カードヘッダーの下線 */
+  --color-main-light-alpha: #4FC3F755;    /* カードや使用技術ボタンの枠線 */
+  --color-bg-box: #eefaff;                /* 使用技術ボタン・太陽ボタンの背景 */
+  --color-bg-hover: #ddfdff;              /* 太陽ボタンの背景・Gitボタンマウスオーバー色 */
+  
+  --color-shadow: rgba(0,116,217,0.12);          /* カードのぼやっとした影 */
+  --color-shadow-header: rgba(0,116,217,0.10);   /* ヘッダーの下のぼやっとした影（↑より若干薄い） */
+  --color-main-section: rgba(255,255,255,0.9);   /* 全カードの背景色 */
+  
+  --color-bg-lighter: #B3E5FC;            /* 背景色１ */
+  --color-bg-light: #fdf5e3;              /* 背景色２ */
 
   --color-black: #222222;
   --color-react: #00D8FF;
@@ -46,18 +54,22 @@ body.light {
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --color-main: #7c89b5;
-    --color-text: #CBD5E1;
-    --color-main-light: #516296;
-    --color-main-light-alpha: #33415588;
-    --color-bg-light: #0F172A;
-    --color-bg-lighter: #1E293B;
-    --color-bg-box: #1E293B;
-    --color-bg-hover: #334155;
-    --color-bg-box-alpha: #1E293BCC;
-    --color-shadow: rgba(30,41,59,0.24);
-    --color-shadow-header: rgba(30,41,59,0.18);
-    --color-main-section: rgba(15, 23, 37, 0.9);
+    --color-main: #7c89b5;                  /* メインカラー */
+    --color-text: #CBD5E1;                  /* テキストカラー */
+
+    --color-bg-box-alpha: #1E293BCC;        /* 自己PR２つのカードの背景色 */
+
+    --color-main-light: #516296;            /* カードヘッダーの下線 */
+    --color-main-light-alpha: #33415588;    /* カードや使用技術ボタンの枠線 */
+    --color-bg-box: #1E293B;                /* 使用技術ボタン・太陽ボタンの背景 */
+    --color-bg-hover: #334155;              /* 太陽ボタンの背景・Gitボタンマウスオーバー色 */
+    
+    --color-shadow: rgba(30,41,59,0.24);          /* カードのぼやっとした影 */
+    --color-shadow-header: rgba(30,41,59,0.18);   /* ヘッダーの下のぼやっとした影（↑より若干薄い） */
+    --color-main-section: rgba(15, 23, 37, 0.9);   /* 全カードの背景色 */
+    
+    --color-bg-lighter: #1E293B;            /* 背景色１ */
+    --color-bg-light: #0F172A;              /* 背景色２ */
 
     --color-black: #F3F4F6;
     --color-react: #00D8FF;
@@ -69,18 +81,22 @@ body.light {
 
 body.dark :root,
 body.dark {
-  --color-main: #7C8DB5;
-  --color-text: #CBD5E1;
-  --color-main-light: #516296;
-  --color-main-light-alpha: #33415588;
-  --color-bg-light: #0F172A;
-  --color-bg-lighter: #1E293B;
-  --color-bg-box: #1E293B;
-  --color-bg-hover: #334155;
-  --color-bg-box-alpha: #1E293BCC;
-  --color-shadow: rgba(30,41,59,0.24);
-  --color-shadow-header: rgba(30,41,59,0.18);
-    --color-main-section: rgba(15, 23, 37, 0.9);
+  --color-main: #7C8DB5;                  /* メインカラー */
+  --color-text: #CBD5E1;                  /* テキストカラー */
+
+  --color-bg-box-alpha: #1E293BCC;        /* 自己PR２つのカードの背景色 */
+
+  --color-main-light: #516296;            /* カードヘッダーの下線 */
+  --color-main-light-alpha: #33415588;    /* カードや使用技術ボタンの枠線 */
+  --color-bg-box: #1E293B;                /* 使用技術ボタン・太陽ボタンの背景 */
+  --color-bg-hover: #334155;              /* 太陽ボタンの背景・Gitボタンマウスオーバー色 */
+  
+  --color-shadow: rgba(30,41,59,0.24);          /* カードのぼやっとした影 */
+  --color-shadow-header: rgba(30,41,59,0.18);   /* ヘッダーの下のぼやっとした影（↑より若干薄い） */
+  --color-main-section: rgba(15, 23, 37, 0.9);   /* 全カードの背景色 */
+  
+  --color-bg-lighter: #1E293B;            /* 背景色１ */
+  --color-bg-light: #0F172A;              /* 背景色２ */
 
   --color-black: #F3F4F6;
   --color-react: #00D8FF;
