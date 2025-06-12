@@ -10,7 +10,7 @@ type Project = {
 
 // 作成したプロジェクトのリスト
 const projects: Project[] = [
-    { year: "2025/6/8", name: "JavaScript練習サイト", link: "https://example.com/js-practice" },
+    { year: "2025/6/8", name: "JavaScript練習サイト", link: "https://20250608-js-practice.vercel.app/" },
     // { year: "2024/5", name: "React学習サイト", link: "https://example.com/react-learning" },
     // { year: "2024/4", name: "TypeScript入門", link: "https://example.com/ts-intro" },
 ];
