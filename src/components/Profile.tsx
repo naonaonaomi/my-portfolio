@@ -1,5 +1,5 @@
 import { getAge } from '../utils';
-import { PROFILE_SECTION_STYLES } from '../constants/styles';
+import { SECTION_STYLES } from '../constants/styles';
 
 // プロフィールセクションのコンポーネント
 
@@ -7,7 +7,10 @@ const Profile = () => {
     const birthDate = new Date(1998, 0, 3); // 月は0始まり（1月=0）
     const age = getAge(birthDate);
     return (
-        <section className={PROFILE_SECTION_STYLES.base} style={{ backgroundColor: 'var(--color-main-section)', borderColor: 'var(--color-main-light-alpha)' }}>
+        <section 
+            className={`${SECTION_STYLES.base} rounded-3xl shadow-[0_4px_24px_var(--color-shadow)] p-10 flex flex-col items-center gap-4`} 
+            style={SECTION_STYLES.background}
+        >
             <div className="w-28 h-28 bg-gradient-to-tr rounded-full flex items-center justify-center shadow-lg mb-2 border-4 border-white overflow-hidden" style={{ background: 'linear-gradient(135deg, var(--color-main) 0%, var(--color-main-light) 100%)' }}>
                 <img src="/danceCat.jpg" alt="アイコン" className="w-full h-full object-cover" />
             </div>
