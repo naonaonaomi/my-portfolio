@@ -1,21 +1,13 @@
-// プロフィールセクションのコンポーネント
+import { getAge } from '../utils';
+import { PROFILE_SECTION_STYLES } from '../constants/styles';
 
-// 年齢を計算する関数
-const getAge = (birthDate: Date) => {
-    const today = new Date();
-    let age = today.getFullYear() - birthDate.getFullYear();
-    const m = today.getMonth() - birthDate.getMonth();
-    if (m < 0 || (m === 0 && today.getDate() < birthDate.getDate())) {
-        age--;
-    }
-    return age;
-};
+// プロフィールセクションのコンポーネント
 
 const Profile = () => {
     const birthDate = new Date(1998, 0, 3); // 月は0始まり（1月=0）
     const age = getAge(birthDate);
     return (
-        <section className="rounded-3xl shadow-[0_4px_24px_var(--color-shadow)] p-10 flex flex-col items-center gap-4 border" style={{ backgroundColor: 'var(--color-main-section)', borderColor: 'var(--color-main-light-alpha)' }}>
+        <section className={PROFILE_SECTION_STYLES.base} style={{ backgroundColor: 'var(--color-main-section)', borderColor: 'var(--color-main-light-alpha)' }}>
             <div className="w-28 h-28 bg-gradient-to-tr rounded-full flex items-center justify-center shadow-lg mb-2 border-4 border-white overflow-hidden" style={{ background: 'linear-gradient(135deg, var(--color-main) 0%, var(--color-main-light) 100%)' }}>
                 <img src="/danceCat.jpg" alt="アイコン" className="w-full h-full object-cover" />
             </div>
@@ -31,4 +23,4 @@ const Profile = () => {
     );
 };
 
-export default Profile; 
+export default Profile;  

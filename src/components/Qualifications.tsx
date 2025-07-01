@@ -1,9 +1,7 @@
-// 保有資格セクションのコンポーネント
+import type { Qualification } from '../types';
+import { SECTION_STYLES } from '../constants/styles';
 
-type Qualification = {
-    year: string; // 取得年
-    name: string; // 資格名
-};
+// 保有資格セクションのコンポーネント
 
 // 保有資格のリスト
 const qualifications: Qualification[] = [
@@ -14,8 +12,8 @@ const qualifications: Qualification[] = [
 ];
 
 const Qualifications = () => (
-    <section className="bg-main-section  rounded-2xl shadow-[0_2px_8px_var(--color-shadow)] p-7 border" style={{ backgroundColor: 'var(--color-main-section)', borderColor: 'var(--color-main-light-alpha)' }}>
-        <h2 className="text-xl font-bold mb-4 border-b pb-2" style={{ color: 'var(--color-main)', borderColor: 'var(--color-main-light)' }}>保有資格</h2>
+    <section className={SECTION_STYLES.base} style={SECTION_STYLES.background}>
+        <h2 className={SECTION_STYLES.header} style={SECTION_STYLES.headerStyle}>保有資格</h2>
         <ul className="space-y-2">
         {qualifications.map((q, i) => (
             <li key={i} className="flex items-center gap-4">
@@ -27,4 +25,4 @@ const Qualifications = () => (
     </section>
 );
 
-export default Qualifications; 
+export default Qualifications;    

@@ -25,33 +25,6 @@
     --color-tailwind: #38BDF8;
 }
 
-body.light :root,
-body.light {
-  --color-main: #57b3e4;                  /* メインカラー */
-  --color-text: #334155;                  /* テキストカラー */
-
-  --color-bg-box-alpha: #E3F2FDCC;        /* 自己PR２つのカードの背景色 */
-
-  --color-main-light: #4FC3F7;            /* カードヘッダーの下線 */
-  --color-main-light-alpha: #4FC3F755;    /* カードや使用技術ボタンの枠線 */
-  --color-bg-box: #eefaff;                /* 使用技術ボタン・太陽ボタンの背景 */
-  --color-bg-hover: #ddfdff;              /* 太陽ボタンの背景・Gitボタンマウスオーバー色 */
-  
-  --color-shadow: rgba(0,116,217,0.12);          /* カードのぼやっとした影 */
-  --color-shadow-header: rgba(0,116,217,0.10);   /* ヘッダーの下のぼやっとした影（↑より若干薄い） */
-  --color-main-section: rgba(255,255,255,0.9);   /* 全カードの背景色 */
-  
-  --color-bg-lighter: #B3E5FC;            /* 背景色１ */
-  --color-bg-light: #fdf5e3;              /* 背景色２ */
-
-  --color-black: #222222;
-  --color-react: #00D8FF;
-  --color-ts: #3178C6;
-  --color-vite: #646CFF;
-  --color-tailwind: #38BDF8;
-} 
-
-
 @media (prefers-color-scheme: dark) {
   :root {
     --color-main: #7c89b5;                  /* メインカラー */
