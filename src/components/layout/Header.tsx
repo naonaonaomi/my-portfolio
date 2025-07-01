@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { useDarkMode } from '../hooks/useDarkMode';
+import { useDarkMode } from '../../hooks/useDarkMode';
 
 function Header() {
     const { darkMode, setDarkMode } = useDarkMode();

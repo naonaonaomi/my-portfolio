@@ -1,6 +1,6 @@
 import { FiExternalLink } from 'react-icons/fi';
-import type { Project } from '../types';
-import { SECTION_STYLES } from '../constants/styles';
+import type { Project } from '../../types';
+import { SECTION_STYLES } from '../../constants/styles';
 
 // 作成サイト一覧セクションのコンポーネント
 

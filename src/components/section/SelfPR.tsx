@@ -1,4 +1,4 @@
-import { SECTION_STYLES } from '../constants/styles';
+import { SECTION_STYLES } from '../../constants/styles';
 
 // 自己PRセクションのコンポーネント
 

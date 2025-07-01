@@ -1,6 +1,6 @@
 // トップページ（Home）のコンポーネント
-import Profile from "../components/Profile";
-import Projects from "../components/Projects";
+import Profile from "../components/section/Profile";
+import Projects from "../components/section/Projects";
 // import Qualifications from "../components/Qualifications";
 // import Experiences from "../components/Experiences";
 // import SelfPR from "../components/SelfPR";

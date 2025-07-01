@@ -4,7 +4,6 @@
     /* light-dark()関数を有効にするために必要 */
     color-scheme: light dark;
     
-    /* light-dark(ライトモード値, ダークモード値) */
     --color-main: light-dark(#57b3e4, #7c89b5);                  /* メインカラー */
     --color-text: light-dark(#334155, #CBD5E1);                  /* テキストカラー */
 

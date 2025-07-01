@@ -1,5 +1,5 @@
-import { getAge } from '../utils';
-import { SECTION_STYLES } from '../constants/styles';
+import { getAge } from '../../utils';
+import { SECTION_STYLES } from '../../constants/styles';
 
 // プロフィールセクションのコンポーネント
 
