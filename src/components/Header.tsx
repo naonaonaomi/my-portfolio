@@ -1,32 +1,8 @@
 import { Link } from "react-router-dom";
-import { useState, useEffect } from "react";
+import { useDarkMode } from '../hooks/useDarkMode';
 
 function Header() {
-
-    // ダークモード状態管理
-    const [darkMode, setDarkMode] = useState(() => {
-        if (typeof window !== 'undefined') {
-            const stored = localStorage.getItem('darkMode');
-            if (stored !== null) {
-                return stored === 'true';
-            }
-            return window.matchMedia('(prefers-color-scheme: dark)').matches;
-        }
-        return false;
-    });
-
-    useEffect(() => {
-        if (typeof window !== 'undefined') {
-            localStorage.setItem('darkMode', darkMode.toString());
-        }
-        if (darkMode) {
-            document.body.classList.add('dark');
-            document.body.classList.remove('light');
-        } else {
-            document.body.classList.remove('dark');
-            document.body.classList.add('light');
-        }
-    }, [darkMode]);
+    const { darkMode, setDarkMode } = useDarkMode();
 
     return (
         <header className="w-full bg-white/80 shadow-[0_2px_8px_var(--color-shadow-header)] fixed top-0 left-0 z-50">
@@ -64,4 +40,4 @@ function Header() {
     );
 }
 
-export default Header; 
+export default Header;  

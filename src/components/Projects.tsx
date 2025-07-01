@@ -1,12 +1,8 @@
 import { FiExternalLink } from 'react-icons/fi';
+import type { Project } from '../types';
+import { SECTION_STYLES } from '../constants/styles';
 
 // 作成サイト一覧セクションのコンポーネント
-
-type Project = {
-    year: string; // 作成年
-    name: string; // プロジェクト名
-    link: string; // 公開リンク
-};
 
 // 作成したプロジェクトのリスト
 const projects: Project[] = [
@@ -15,8 +11,8 @@ const projects: Project[] = [
 ];
 
 const Projects = () => (
-    <section className="bg-main-section rounded-2xl shadow-[0_2px_8px_var(--color-shadow)] p-7 border" style={{ backgroundColor: 'var(--color-main-section)', borderColor: 'var(--color-main-light-alpha)' }}>
-        <h2 className="text-xl font-bold mb-4 border-b pb-2" style={{ color: 'var(--color-main)', borderColor: 'var(--color-main-light)' }}>作成したサイト</h2>
+    <section className={SECTION_STYLES.base} style={SECTION_STYLES.background}>
+        <h2 className={SECTION_STYLES.header} style={SECTION_STYLES.headerStyle}>作成したサイト</h2>
         <ul className="space-y-2">
         {projects.map((project, i) => (
             <li key={i} className="flex items-center gap-4">
@@ -37,4 +33,4 @@ const Projects = () => (
     </section>
 );
 
-export default Projects; 
+export default Projects;    
