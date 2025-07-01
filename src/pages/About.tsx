@@ -1,14 +1,14 @@
 // Aboutページのコンポーネント
 
-import { useEffect, useState } from "react";
 import { FiExternalLink } from 'react-icons/fi';
+import { useEffect, useState } from 'react';
 
 const About = () => {
+    const [darkMode, setDarkMode] = useState(false);
 
-    //
-    const [isDark, setIsDark] = useState(false);
     useEffect(() => {
-        const checkDark = () => setIsDark(document.body.classList.contains("dark"));
+        // bodyにdarkクラスがついているかで判定
+        const checkDark = () => setDarkMode(document.body.classList.contains("dark"));
         checkDark();
         const observer = new MutationObserver(checkDark);
         observer.observe(document.body, { attributes: true, attributeFilter: ["class"] });
@@ -19,7 +19,7 @@ const About = () => {
         <div>
             <div className="flex justify-center max-w-3xl mx-auto gap-10" style={{ position: "relative", zIndex: 2 }}>
                 <div className="bg-white rounded-2xl shadow-[0_2px_8px_var(--color-shadow)] p-10 max-w-3xl w-full border" style={{ backgroundColor: 'var(--color-main-section)', borderColor: 'var(--color-main-light-alpha)'}}>
-                    <div>
+                    <div className="mb-8">
                         <h3 className="text-lg font-semibold mb-3 flex items-center gap-2" style={{ color: 'var(--color-main)' }}>
                             ソースコード
                         </h3>
@@ -33,7 +33,7 @@ const About = () => {
                                     style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}
                                 >
                                     <span className="flex items-center gap-2">
-                                        <img src={isDark ? "/assets/github_white.svg" : "/assets/github.svg"} alt="github" className="w-6 h-6" />
+                                        <img src={darkMode ? "/assets/github_white.svg" : "/assets/github.svg"} alt="github" className="w-6 h-6" />
                                         <span className="font-bold text-[var(--color-black)]">GitHub</span>
                                     </span>
                                     <FiExternalLink className="w-4 h-4" style={{ color: 'var(--color-black)' }} />
@@ -41,7 +41,7 @@ const About = () => {
                             </li>
                         </ul>
                     </div>
-                    <div className="mt-8">
+                    <div className="mb-8">
                         <h3 className="text-lg font-semibold mb-3 flex items-center gap-2" style={{ color: 'var(--color-main)' }}>
                             使用技術
                         </h3>
@@ -70,14 +70,13 @@ const About = () => {
                         </h3>
                         <ul className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                             <li className="flex items-center gap-2 bg-[var(--color-bg-box)] rounded-xl px-3 py-2 shadow-sm border border-[var(--color-main-light-alpha)]">
-                                <img src={isDark ? "/assets/vercel _white.svg" : "/assets/vercel.svg"} alt="Vercel" className="w-6 h-6" />
+                                <img src={darkMode ? "/assets/vercel _white.svg" : "/assets/vercel.svg"} alt="Vercel" className="w-6 h-6" />
                                 <span className="font-bold text-[var(--color-black)]">Vercel</span>
                             </li>
                         </ul>
                     </div>
                 </div>
             </div>
-            <footer className="text-center text-xs text-gray-400 mt-8">© 2025 松尾直実</footer>
         </div>
     );
 };

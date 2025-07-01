@@ -48,15 +48,27 @@
 project-root/
   ├── src/
   │     ├── components/
-  │     │     ├── Header.tsx
-  │     │     ├── Profile.tsx
-  │     │     ├── Qualifications.tsx
-  │     │     ├── Experiences.tsx
-  │     │     ├── SelfPR.tsx
+  │     │     ├── layout/
+  │     │     │     ├── Header.tsx
+  │     │     │     └── Footer.tsx
+  │     │     ├── section/
+  │     │     │     ├── Profile.tsx
+  │     │     │     ├── Qualifications.tsx
+  │     │     │     ├── Experiences.tsx
+  │     │     │     ├── Projects.tsx
+  │     │     │     └── SelfPR.tsx
   │     │     └── StarBackground.tsx
   │     ├── pages/
   │     │     ├── Home.tsx
   │     │     └── About.tsx
+  │     ├── hooks/
+  │     │     └── useDarkMode.ts
+  │     ├── types/
+  │     │     └── index.ts
+  │     ├── constants/
+  │     │     └── styles.ts
+  │     ├── utils/
+  │     │     └── index.ts
   │     ├── App.tsx
   │     ├── main.tsx
   │     ├── index.css
@@ -72,7 +84,13 @@ project-root/
 
 - `src/`：ソースコード（`App.tsx`がメインコンポーネント、`main.tsx`がエントリーポイント）
   - `components/`：再利用可能なUIコンポーネント
+    - `layout/`：レイアウト系コンポーネント（ヘッダー、フッターなど）
+    - `section/`：セクション系コンポーネント
   - `pages/`：ページ単位のコンポーネント
+  - `hooks/`：カスタムReactフック
+  - `types/`：TypeScript型定義
+  - `constants/`：定数定義
+  - `utils/`：ユーティリティ関数
 - `public/`：公開用静的ファイル（画像やSVGアイコンなど）
 - その他設定ファイル：Vite、ESLint、TypeScriptなどの設定
 

@@ -1,6 +1,6 @@
-import type { Experience } from '../types';
-import { getReactPeriod } from '../utils';
-import { SECTION_STYLES } from '../constants/styles';
+import type { Experience } from '../../types';
+import { getReactPeriod } from '../../utils';
+import { SECTION_STYLES } from '../../constants/styles';
 
 // 経験セクションのコンポーネント
 

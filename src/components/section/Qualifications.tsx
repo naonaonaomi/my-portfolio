@@ -1,5 +1,5 @@
-import type { Qualification } from '../types';
-import { SECTION_STYLES } from '../constants/styles';
+import type { Qualification } from '../../types';
+import { SECTION_STYLES } from '../../constants/styles';
 
 // 保有資格セクションのコンポーネント
 
