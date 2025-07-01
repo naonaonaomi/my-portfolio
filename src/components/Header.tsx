@@ -5,7 +5,7 @@ function Header() {
     const { darkMode, setDarkMode } = useDarkMode();
 
     return (
-        <header className="w-full bg-white/80 shadow-[0_2px_8px_var(--color-shadow-header)] fixed top-0 left-0 z-50">
+        <header className="w-full shadow-[0_2px_8px_var(--color-shadow-header)] fixed top-0 left-0 z-50" style={{ backgroundColor: 'var(--color-header-bg)' }}>
         <nav className="max-w-3xl mx-auto flex items-center justify-between px-4 py-3">
             <Link to="/" className="flex items-center">
                 <img

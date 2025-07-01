@@ -1,79 +1,37 @@
 @import "tailwindcss";
 
 :root {
-    --color-main: #57b3e4;                  /* メインカラー */
-    --color-text: #334155;                  /* テキストカラー */
-
-    --color-bg-box-alpha: #E3F2FDCC;        /* 自己PR２つのカードの背景色 */
-
-    --color-main-light: #4FC3F7;            /* カードヘッダーの下線 */
-    --color-main-light-alpha: #4FC3F755;    /* カードや使用技術ボタンの枠線 */
-    --color-bg-box: #eefaff;                /* 使用技術ボタン・太陽ボタンの背景 */
-    --color-bg-hover: #ddfdff;              /* 太陽ボタンの背景・Gitボタンマウスオーバー色 */
+    /* light-dark()関数を有効にするために必要 */
+    color-scheme: light dark;
     
-    --color-shadow: rgba(0,116,217,0.12);          /* カードのぼやっとした影 */
-    --color-shadow-header: rgba(0,116,217,0.10);   /* ヘッダーの下のぼやっとした影（↑より若干薄い） */
-    --color-main-section: rgba(255,255,255,0.9);   /* 全カードの背景色 */
-    
-    --color-bg-lighter: #B3E5FC;            /* 背景色１ */
-    --color-bg-light: #fdf5e3;              /* 背景色２ */
+    /* light-dark(ライトモード値, ダークモード値) */
+    --color-main: light-dark(#57b3e4, #7c89b5);                  /* メインカラー */
+    --color-text: light-dark(#334155, #CBD5E1);                  /* テキストカラー */
 
-    --color-black: #222222;
+    --color-bg-box-alpha: light-dark(#E3F2FDCC, #1E293BCC);      /* 自己PR２つのカードの背景色 */
+
+    --color-main-light: light-dark(#4FC3F7, #516296);            /* カードヘッダーの下線 */
+    --color-main-light-alpha: light-dark(#4FC3F755, #33415588);  /* カードや使用技術ボタンの枠線 */
+    --color-bg-box: light-dark(#eefaff, #1E293B);                /* 使用技術ボタン・太陽ボタンの背景 */
+    --color-bg-hover: light-dark(#ddfdff, #334155);              /* 太陽ボタンの背景・Gitボタンマウスオーバー色 */
+    
+    --color-shadow: light-dark(rgba(0,116,217,0.12), rgba(30,41,59,0.24));          /* カードのぼやっとした影 */
+    --color-shadow-header: light-dark(rgba(0,116,217,0.10), rgba(30,41,59,0.18));   /* ヘッダーの下のぼやっとした影（↑より若干薄い） */
+    --color-main-section: light-dark(rgba(255,255,255,0.9), rgba(15, 23, 37, 0.9)); /* 全カードの背景色 */
+    
+    --color-bg-light: light-dark(#fdf5e3, #0F172A);              /* 背景色１ */
+    --color-bg-lighter: light-dark(#B3E5FC, #1E293B);            /* 背景色２ */
+    --color-main-bg-end: light-dark(white, #767995);             /* 背景のグラデーション終点 */
+
+    --color-black: light-dark(#222222, #F3F4F6);
+    --color-header-bg: light-dark(rgba(255,255,255,0.8), rgba(15, 23, 37, 0.8));  /* ヘッダー背景色 */
     --color-react: #00D8FF;
-    --color-ts: #3178C6;
-    --color-vite: #646CFF;
-    --color-tailwind: #38BDF8;
+    --color-ts: light-dark(#3178C6, #60A5FA);
+    --color-vite: light-dark(#646CFF, #818CF8);
+    --color-tailwind: #38BDF8; 
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-main: #7c89b5;                  /* メインカラー */
-    --color-text: #CBD5E1;                  /* テキストカラー */
-
-    --color-bg-box-alpha: #1E293BCC;        /* 自己PR２つのカードの背景色 */
-
-    --color-main-light: #516296;            /* カードヘッダーの下線 */
-    --color-main-light-alpha: #33415588;    /* カードや使用技術ボタンの枠線 */
-    --color-bg-box: #1E293B;                /* 使用技術ボタン・太陽ボタンの背景 */
-    --color-bg-hover: #334155;              /* 太陽ボタンの背景・Gitボタンマウスオーバー色 */
-    
-    --color-shadow: rgba(30,41,59,0.24);          /* カードのぼやっとした影 */
-    --color-shadow-header: rgba(30,41,59,0.18);   /* ヘッダーの下のぼやっとした影（↑より若干薄い） */
-    --color-main-section: rgba(15, 23, 37, 0.9);   /* 全カードの背景色 */
-    
-    --color-bg-lighter: #1E293B;            /* 背景色１ */
-    --color-bg-light: #0F172A;              /* 背景色２ */
-
-    --color-black: #F3F4F6;
-    --color-react: #00D8FF;
-    --color-ts: #60A5FA;
-    --color-vite: #818CF8;
-    --color-tailwind: #38BDF8;
-  }
-}
-
-body.dark :root,
+/* 手動ダークモード切り替えのフォールバック */
 body.dark {
-  --color-main: #7C8DB5;                  /* メインカラー */
-  --color-text: #CBD5E1;                  /* テキストカラー */
-
-  --color-bg-box-alpha: #1E293BCC;        /* 自己PR２つのカードの背景色 */
-
-  --color-main-light: #516296;            /* カードヘッダーの下線 */
-  --color-main-light-alpha: #33415588;    /* カードや使用技術ボタンの枠線 */
-  --color-bg-box: #1E293B;                /* 使用技術ボタン・太陽ボタンの背景 */
-  --color-bg-hover: #334155;              /* 太陽ボタンの背景・Gitボタンマウスオーバー色 */
-  
-  --color-shadow: rgba(30,41,59,0.24);          /* カードのぼやっとした影 */
-  --color-shadow-header: rgba(30,41,59,0.18);   /* ヘッダーの下のぼやっとした影（↑より若干薄い） */
-  --color-main-section: rgba(15, 23, 37, 0.9);   /* 全カードの背景色 */
-  
-  --color-bg-lighter: #1E293B;            /* 背景色１ */
-  --color-bg-light: #0F172A;              /* 背景色２ */
-
-  --color-black: #F3F4F6;
-  --color-react: #00D8FF;
-  --color-ts: #60A5FA;
-  --color-vite: #818CF8;
-  --color-tailwind: #38BDF8;
+  color-scheme: dark;
 }

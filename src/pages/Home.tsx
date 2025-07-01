@@ -13,7 +13,6 @@ const Home = () => (
             {/* <Qualifications />
             <Experiences />
             <SelfPR /> */}
-            <footer className="text-center text-xs text-gray-400 mt-8">© 2025 松尾直実</footer>
         </div>
     </div>
 );
