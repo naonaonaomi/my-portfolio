@@ -8,6 +8,7 @@ import { SECTION_STYLES } from '../../constants/styles';
 const projects: Project[] = [
     { year: "2025/6/8", name: "JavaScript練習サイト", link: "https://20250608-js-practice.vercel.app/" },
     { year: "2025/6/14", name: "TypeScript練習サイト", link: "https://20250614-ts-practice.vercel.app/" },
+    { year: "2025/7/6", name: "テトリス（PC専用）", link: "https://20250706-next-js-tetris.vercel.app/" },
 ];
 
 const Projects = () => (
